@@ -26,10 +26,25 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/skills', {
+        templateUrl: 'views/skills.html',
+        controller: 'SkillsCtrl',
+        controllerAs: 'skills'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        // controller: 'AboutCtrl',
+        // controllerAs: 'about'
+      })
+      .when('/projects', {
+        templateUrl: 'views/projects.html',
+        // controller: 'AboutCtrl',
+        // controllerAs: 'about'
       })
       .otherwise({
         redirectTo: '/'

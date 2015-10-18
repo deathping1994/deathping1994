@@ -4,7 +4,9 @@
   color: #000;
   padding: 0.2em 0;
 }
-
+.navbar-inverse{
+  background-color: #31404C;
+}
 body {
   padding: 0;
 }
@@ -16,7 +18,16 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.profile-pic{
+  height: 150px;
+  width: 150px;
 
+}
+.icon{
+  height: 50px;
+  width: 50px;
+
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
