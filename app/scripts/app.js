@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-loading-bar'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -41,9 +42,19 @@ angular
         // controller: 'AboutCtrl',
         // controllerAs: 'about'
       })
+      .when('/kidding', {
+        templateUrl: 'views/kidding.html',
+        // controller: 'AboutCtrl',
+        // controllerAs: 'about'
+      })
+      .when('/hiring', {
+        templateUrl: 'views/hire.html',
+        // controller: 'AboutCtrl',
+        // controllerAs: 'about'
+      })
       .when('/projects', {
         templateUrl: 'views/projects.html',
-        // controller: 'AboutCtrl',
+        controller: 'ProjectCtrl'
         // controllerAs: 'about'
       })
       .otherwise({
