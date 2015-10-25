@@ -1,7 +1,7 @@
 <div class="container">
 <h2>Open Source Projects I contribute to..</h2>
   <ul>
-    <li ng-repeat="contribution in contributions"><h4 class="text-success"><a ng-href="contribution.url">{{contribution.name}}</a></h4>
+    <li ng-repeat="contribution in contributions"><h4 class="text-success"><a ng-href="{{contribution.url}}">{{contribution.name}}</a></h4>
     <p class="text-success well" ng-bind="contribution.description"></p>
     </li>
   </ul>
@@ -11,7 +11,7 @@
 <a class="" href="https://github.com/deathping1994">Checkout my work on<img src="images/github.png" class="icon"/></a>
 </p>
 <div class="container">
-  <ul><li ng-repeat="project in projects|filter:{fork:false}|orderBy: sortproject"><h4 class="text-success"><a ng-href="project.html_url">{{project.name}}</a></h4>
+  <ul><li ng-repeat="project in projects|filter:{fork:false}|orderBy: sortproject"><h4 class="text-success"><a ng-href="{{project.html_url}}">{{project.name}}</a></h4>
   <p class="text-success well">{{project.description}}<br/><span class="glyphicon glyphicon-star pull-right">{{project.stargazers_count}}</span></p>
   </li>
   </ul>
