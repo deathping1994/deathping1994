@@ -1,11 +1,402 @@
-<div class="jumbotron">
-  <h1>Hi! I am Gaurav Shukla</h1>
-  <p class="text-muted">
-    <img src="images/gaurav.jpg" class="profile-pic img-circle" alt="Gaurav Shukla"><br>
-    Always pleasure crafting the <i>Web</i>.<br/>I am available as Freelance Web Developer/Designer.
-  </p>
-  <p class="text-info">
-<a class="" href="https://github.com/deathping1994">Checkout my work on<img src="images/github.png" class="icon"/></a>
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/hiring">Hire Me<span class="glyphicon glyphicon-ok"></span></a></p>
+<style type="text/css">
+
+.content {
+    padding-top: 30px;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: medium none;
+    color: #666;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+    position: relative;
+}
+.testimonials blockquote::before {
+    width: 0; 
+    height: 0;
+	right: 0;
+	bottom: 0;
+	content: " "; 
+	display: block; 
+	position: absolute;
+    border-bottom: 20px solid #fff;    
+	border-right: 0 solid transparent;
+	border-left: 15px solid transparent;
+	border-left-style: inset; /*FF fixes*/
+	border-bottom-style: inset; /*FF fixes*/
+}
+.testimonials blockquote::after {
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    content: " ";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #e63f0c transparent transparent transparent;
+}
+.testimonials .carousel-info img {
+    border: 1px solid #f5f5f5;
+    border-radius: 150px !important;
+    height: 75px;
+    padding: 3px;
+    width: 75px;
+}
+.testimonials .carousel-info {
+    overflow: hidden;
+}
+.testimonials .carousel-info img {
+    margin-right: 15px;
+}
+.testimonials .carousel-info span {
+    display: block;
+}
+.testimonials span.testimonials-name {
+    color: #e6400c;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 23px 0 7px;
+}
+.testimonials span.testimonials-post {
+    color: #656565;
+    font-size: 12px;
+}
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: -1px 3px 21px -2px rgba(135,130,173,1);
+-moz-box-shadow: -1px 3px 21px -2px rgba(135,130,173,1);
+box-shadow: -1px 3px 21px -2px rgba(135,130,173,1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+    background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+    background-color: #427fed;
+}
+
+.card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+    background: url("https://scontent.fbom1-2.fna.fbcdn.net/v/t1.0-9/10550848_583788251737799_2620732761632711874_n.jpg?oh=b04932f7bde80d2e885496307ced42b3&oe=57AE08A7");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+.roundbtn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+</style>
+<div class="well">
+<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-12">
+
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="/images/gaurav.jpg">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a href="http://gauravshukla.xyz/">Gaurav Shukla</a>
+                    </div>
+                    <div class="desc">Freelance Software Developer</div>
+                    <div class="desc">Tech geek</div>
+                    <div class="desc">Generalist</div>
+                    <div class="desc">Constant Learner</div>
+                    <div class="desc">Big Picture Guy</div>
+                    <div class="desc"><a class="btn btn-lg btn-success" ng-href="#/hiring">Hire Me<span class="glyphicon glyphicon-ok"></span></a></div>
+                </div>
+                <div class="bottom">
+                    <a class="roundbtn btn-primary btn-twitter btn-sm" href="https://www.linkedin.com/in/gaurav-shukla-42ba1832">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="roundbtn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+GauravShuklajiit/">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="roundbtn btn-primary btn-sm" rel="publisher"
+                       href="https://fb.com/deathping1994">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="roundbtn btn-warning btn-sm" rel="publisher" href="https://github.com/deathping1994">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-9 ">
+        	<div class="panel panel-default">
+			  <div class="panel-body">
+			    <p class="text-muted">Hi, I am Gaurav Shukla </p>
+			    <p class="text-center h3 text-info"><i>Freelance Software Developer</i></p>
+			    <p class="text-muted"><br>My area of expertise is Decoupled Webapps and Web services but anything even remotely related to computers catches my attention me.
+			    </p>
+			    <div class="well">
+			    <p class="text-info"><br>My area of interest includes-
+				    <ul class="unordered-list text-info">
+				    	<li>Restful Web Services</li>
+				    	<li>MicroServices Architecture</li>
+				    	<li>Distributed Computing</li>
+				    	<li>Machine Learning</li>
+				    	<li>Conversational UI</li>	
+				    </ul>
+				</p>
+				</div>
+				<p class="text-info well">
+					Apart from all this technical stuff I like reading random stuff - from history of India to the mystry of Universe, literally anything.
+					Quora is my most visited site.<br><br> I like going on long walks more than anything else and I am not the right person to discuss sports with,world politics is my forte.
+				</p>
+			  </div>
+			</div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+        <div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Testimonials</h3>
+		  </div>
+		  <div class="panel-body">
+			<div  ng-repeat= "testi in testimonials" class="testimonials">
+            	<div class="active item">
+                  <blockquote><p>{{testi.quote}}</p></blockquote>
+                  <div class="carousel-info">
+                    <img alt="" ng-src="{{testi.img}}" class="pull-left">
+                    <div class="pull-left">
+                      <span class="testimonials-name">{{testi.name}}</span>
+                      <span class="testimonials-post">{{testi.desc}}</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+			</div>
+		</div>
+      		
+        </div>
+</div>
 </div>
