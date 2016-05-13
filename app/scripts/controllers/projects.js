@@ -20,7 +20,7 @@ angular.module('deathping1994githubioApp')
     $scope.projects= [
     {
       name: "Concerted Website",
-      img: "/images/concerted.png",
+      img: "images/concerted.png",
       url: "http://gauravshukla.xyz/concerted-website",
       code: "https://github.com/apache/incubator-concerted",
       description: "This is a website I designed for Apache-Concerted Project (now dead).This website renders markdown format and can be update via git, no knowledge of webservers needed.",
@@ -29,14 +29,14 @@ angular.module('deathping1994githubioApp')
       {
         name: "MechEye Photography",
         url: "http://mecheyephotography.com/",
-        img: "/images/mecheye.png",
+        img: "images/mecheye.png",
         description: "A photography portfolio designed to be operated and updated from google drive, no hosting account or expertise needed.",
         stack: "Angular JS/PHP"
       },
       {
         name: "Poolclues",
         url: "http://poolclues.gauravshukla.xyz/",
-        img: "/images/poolclues.png",
+        img: "images/poolclues.png",
         description: "Money Pooling platform I created for Shopclues.com. I was the lead architect and backend developer on this one.",
         stack: "Python-Flask/Angular JS/PgSQL/Mongo/Redis/Elastic Search",
         presentation: "https://docs.google.com/presentation/d/1JnFJbZd0viSdxPot3rdIVbo9Cbkib7eaP8YeMrYIrkI/edit?usp=sharing"
@@ -45,7 +45,7 @@ angular.module('deathping1994githubioApp')
         name: "Probase",
         url: "http://probase.gauravshukla.xyz/",
         code: "https://github.com/deathping1994/probase",
-        img: "/images/probase.png",
+        img: "images/probase.png",
         description: "Project management system with realtime search and plagairism checking I developed for my college.",
         stack: "Elastic Search/Mongo/Python-Flask/AngularJs",
         presentation: "https://docs.google.com/presentation/d/1tjkAgJtFk8eTRpIKxPhASYVxD67BpsNPoQwdhhOWG8M/edit?usp=sharing"
@@ -54,7 +54,7 @@ angular.module('deathping1994githubioApp')
         name: "Parallax",
         url: "https://github.com/Bhramastra/parallax",
         code: "https://github.com/Bhramastra/parallax",
-        img: "/images/parallax.png",
+        img: "images/parallax.png",
         description: "Python Framework for asynchronous and distributed programming (Buggy and incomplete)",
         stack: "Python",
         presentation: "https://docs.google.com/presentation/d/1KruvuHJXD6IgVdbRB0JnlMNmK5dh6lMlHbPOlapwLhY/edit?usp=sharing"
@@ -63,7 +63,7 @@ angular.module('deathping1994githubioApp')
         name: "Cyberroam Brute",
         url: "https://github.com/deathping1994/Cyberoam-Brute",
         code: "https://github.com/deathping1994/Cyberoam-Brute",
-        img: "/images/cyberroam.png",
+        img: "images/cyberroam.png",
         description: "A python script to carry out brute force attack on JIIT cyberoam portal.(By Far the most used script I ever wrote)",
         stack: "Python"
       }];

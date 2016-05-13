@@ -19,7 +19,7 @@ angular.module('deathping1994githubioApp')
     	name: "Yash Gupta",
     	desc: "Android Developer",
     	quote: "I remeber working with him on Probase, it was our first project togather, The way he architectured the webapp was awesome,I've never seen anyone decouple apps so gracefully. He comes up with ingenious solutions, he's crazy about making things scalable but that's a good thing I guess.",
-    	img: "/images/yash.png"
+    	img: "../images/yash.png"
     }
     ];
       });
