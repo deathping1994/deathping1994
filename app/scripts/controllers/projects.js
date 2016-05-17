@@ -35,7 +35,7 @@ angular.module('deathping1994githubioApp')
       },
       {
         name: "Poolclues",
-        url: "http://poolclues.gauravshukla.xyz/",
+        url: "http://poolclues.gauravshukla.xyz:8080/startbootstrap-agency-1.0.4/index.html",
         img: "images/poolclues.png",
         description: "Money Pooling platform I created for Shopclues.com. I was the lead architect and backend developer on this one.",
         stack: "Python-Flask/Angular JS/PgSQL/Mongo/Redis/Elastic Search",
@@ -43,7 +43,7 @@ angular.module('deathping1994githubioApp')
       },
       {
         name: "Probase",
-        url: "http://probase.gauravshukla.xyz/",
+        url: "http://probase.gauravshukla.xyz:8080/",
         code: "https://github.com/deathping1994/probase",
         img: "images/probase.png",
         description: "Project management system with realtime search and plagairism checking I developed for my college.",
