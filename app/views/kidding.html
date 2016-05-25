@@ -1,8 +1,14 @@
 <div class="jumbotron">
-<h1 class="text-warning">Really!! you want 10 reasons ?? !%#&*
-</h1>
-<h3>
-  Well I was just kidding, I haven't given much thought to it. You can come back later or just get in touch with me I assure you will get more then 10 reasons.
-
-</h3>
+<ul class="list-unstyled">
+	<li ng-repeat="question in questions">
+		<div class="panel panel-info">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">{{question.text}}</h3>
+		  </div>
+		  <div class="panel-body">
+		    
+		  </div>
+		</div>
+	</li>
+</ul>
 </div>
