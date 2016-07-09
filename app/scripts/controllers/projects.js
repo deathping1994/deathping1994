@@ -19,6 +19,13 @@ angular.module('deathping1994githubioApp')
                         ];
     $scope.projects= [
     {
+        name: "Delimedy #LiveBetter",
+        url: "https://delimedy.com",
+        img: "images/delimedy.png",
+        description: "E-Commerce website to orders medicines and get them delivered at your doorstep.I worked on this while I was freelancing.",
+        stack: "Django/jQuery/MySql/Redis"
+    },
+    {
       name: "Concerted Website",
       img: "images/concerted.png",
       url: "http://gauravshukla.xyz/concerted-website",
@@ -32,14 +39,6 @@ angular.module('deathping1994githubioApp')
         img: "images/mecheye.png",
         description: "A photography portfolio designed to be operated and updated from google drive, no hosting account or expertise needed.",
         stack: "Angular JS/PHP"
-      },
-      {
-        name: "Poolclues",
-        url: "http://poolclues.gauravshukla.xyz:8080/startbootstrap-agency-1.0.4/index.html",
-        img: "images/poolclues.png",
-        description: "Money Pooling platform I created for Shopclues.com. I was the lead architect and backend developer on this one.",
-        stack: "Python-Flask/Angular JS/PgSQL/Mongo/Redis/Elastic Search",
-        presentation: "https://docs.google.com/presentation/d/1JnFJbZd0viSdxPot3rdIVbo9Cbkib7eaP8YeMrYIrkI/edit?usp=sharing"
       },
       {
         name: "Probase",
