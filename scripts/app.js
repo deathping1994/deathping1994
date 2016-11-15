@@ -10,16 +10,8 @@
  */
 angular
   .module('deathping1994githubioApp', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
-    'angular-loading-bar'
-  ])
+    'ngRoute'
+    ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
